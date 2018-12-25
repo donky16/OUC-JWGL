@@ -1,0 +1,65 @@
+{
+  "button": [
+    {
+      "name": "教务查询",
+      "sub_button": [
+        {
+          "type": "click",
+          "name": "我的课表",
+          "key": "course"
+        },
+        {
+          "type": "click",
+          "name": "我的考试",
+          "key": "exam"
+        },
+        {
+          "type": "click",
+          "name": "我的成绩",
+          "key": "grades"
+        }
+      ]
+    },
+    {
+      "name": "辅助功能",
+      "sub_button": [
+        {
+          "type": "view",
+          "name": "天气情况",
+          "url": "https://www.baidu.com/baidu?wd=%E5%A4%A9%E6%B0%94&tn=monline_dg&ie=utf-8"
+        },
+        {
+          "type": "pic_photo_or_album",
+          "name": "看看世界",
+          "key": "photo",
+          "sub_button": []
+        },
+        {
+          "type": "click",
+          "name": "近期活动",
+          "key": "activity"
+        },
+        {
+          "type": "click",
+          "name": "敬请期待",
+          "key": "nothing"
+        }
+      ]
+    },
+    {
+      "name": "闲来交谈",
+      "sub_button": [
+        {
+          "type": "click",
+          "name": "我有话说",
+          "key": "talk"
+        },
+        {
+          "type": "click",
+          "name": "制作者们",
+          "key": "us"
+        }
+      ]
+    }
+  ]
+}
