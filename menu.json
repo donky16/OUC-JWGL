@@ -5,8 +5,8 @@
       "sub_button": [
         {
           "type": "click",
-          "name": "我的课表",
-          "key": "course"
+          "name": "今日课表",
+          "key": "today-course"
         },
         {
           "type": "click",
@@ -17,6 +17,11 @@
           "type": "click",
           "name": "我的成绩",
           "key": "grades"
+        },
+                {
+          "type": "click",
+          "name": "我的课表",
+          "key": "course"
         }
       ]
     },
@@ -24,9 +29,9 @@
       "name": "辅助功能",
       "sub_button": [
         {
-          "type": "view",
+          "type": "click",
           "name": "天气情况",
-          "url": "https://www.baidu.com/baidu?wd=%E5%A4%A9%E6%B0%94&tn=monline_dg&ie=utf-8"
+          "key": "weather"
         },
         {
           "type": "pic_photo_or_album",

@@ -8,6 +8,10 @@ from app.models import *
 
 @app.route('/', methods=['GET', 'POST'])
 def main():
+    """
+     GET /?signature=8697f29de08ee3bfccc14a72e2a4e9abf2e157c0&echostr=5129591258879047566&timestamp=1545810822&nonce=1624905056
+    :return:
+    """
     if request.method == 'GET':
         token = 'weixin'
         data = request.args

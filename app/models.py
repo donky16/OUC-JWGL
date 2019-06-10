@@ -1,6 +1,7 @@
 # -*- coding:utf-8 -*-
 
 from app import db
+from app.jwgl_client import Data, Login
 
 
 class User(db.Model):
@@ -48,3 +49,16 @@ def insert_course(username, week, course):
 def select_course(username, week):
     course = Course.query.filter_by(username=username, week=week).first()
     return course
+
+
+def insert_data(u, p, openid, cookies):
+    if cookies:
+        data = Data(cookies)
+        grades = data.get_grades(u).encode('utf-8')
+        exam = data.get_exam(u).encode('utf-8')
+        if not exam:
+            exam = ''
+        insert_user(openid, u, p, exam, grades)
+        for week in range(1, 18):
+            course = data.get_lessons_by_week(week).encode('utf-8')
+            insert_course(u, week, course)
